@@ -1,11 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i");
-@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 html,
 body {
   margin: 0;
   height: 120%;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #eee;
+}
+
+.content {
+  background: rgb(84, 99, 99);
+  background: linear-gradient(
+    0deg,
+    rgba(84, 99, 99, 1) 0%,
+    rgba(27, 32, 48, 1) 100%
+  );
 }
 
 h1,
@@ -23,7 +33,6 @@ h1 {
 
 h2 {
   font-size: 3em;
-  font-family: 'Exo', sans-serif;
 }
 
 li {
@@ -38,7 +47,7 @@ li {
   justify-content: center;
   align-items: flex-start;
   align-content: flex-start;
-  height: 35vw;
+  height: 38vw;
   min-height: 400px;
   max-height: 530px;
   min-width: 300px;
@@ -53,9 +62,11 @@ li {
   bottom: 0;
   left: 0;
   z-index: -1;
-  background: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0.12) 40%,
-      rgba(27, 32, 48, 1) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.12) 40%,
+    rgba(27, 32, 48, 1) 100%
+  );
 }
 
 .header:before {
@@ -70,7 +81,9 @@ li {
   backface-visibility: hidden;
   scale: (1, 1);
   transform: translateZ(0);
-  background: #1b2030 url(https://images.unsplash.com/photo-1530738270955-2ed78de5c2a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1905&q=80) 50% 0 no-repeat;
+  background: #1b2030
+    url(https://images.unsplash.com/photo-1530738270955-2ed78de5c2a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1905&q=80)
+    50% 0 no-repeat;
   background-size: 100%;
   background-attachment: fixed;
   animation: grow 360s linear 10ms infinite;
@@ -101,12 +114,13 @@ li {
   margin: 15px 0;
 }
 
-.topic_header{
+.topic_header {
   font-size: 1.1em;
   font-weight: bolder;
   border-bottom-style: solid;
-  font-family: 'Questrial', sans-serif;
+  font-family: "Questrial", sans-serif;
   margin: 2% auto 1% 20%;
+  padding-bottom: 3px;
 }
 
 .info_panel {
@@ -164,10 +178,25 @@ li {
 
 .panel {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+.education_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+
+.education_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .education_card {
@@ -175,9 +204,17 @@ li {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  height: 42px;
+  margin: 8px;
+  padding: 8px;
+  background-color: #1b2030;
+  border-radius: 15px;
+  color: #eee;
+  width: 42%;
+  min-width: 400px;
 }
 
-.programmingContent {
+.programming_content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -192,6 +229,9 @@ li {
 }
 
 .carousel__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 125px;
   display: none;
 }
