@@ -168,6 +168,7 @@ li {
   height: 55px;
   width: 60%;
   margin: 0% 20%;
+  min-width: 350px;
 }
 
 .people_icon {
