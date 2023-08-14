@@ -9,19 +9,24 @@ body {
   color: #eee;
 }
 
-
-
 .content {
-  background: linear-gradient(150deg, #000000, #141823, #191f36, #0a3338, #057e7e);
+  background: linear-gradient(
+    150deg,
+    #000000,
+    #141823,
+    #191f36,
+    #0a3338,
+    #057e7e
+  );
   background-size: 240% 240%;
-  animation: gradient-animation 32s ease infinite;
+  animation: gradient-animation 22s ease infinite;
 }
 
 @keyframes gradient-animation {
   0% {
     background-position: 0% 50%;
   }
-  50% {
+  40% {
     background-position: 100% 50%;
   }
   100% {
@@ -47,7 +52,7 @@ h2 {
 }
 
 li {
-  margin: 2% auto;
+  margin: 10px auto;
 }
 
 .header {
@@ -171,7 +176,7 @@ li {
 
 .people_blank {
   width: 38px;
-  opacity: 0.6;
+  opacity: 0.3;
 }
 
 .experience_content {
@@ -226,6 +231,10 @@ li {
   box-shadow: 5px 6px 7px 2px rgba(0, 0, 0, 0.62);
 }
 
+.education_card div h4 {
+    margin-bottom: 5px;
+}
+
 .programming_content {
   display: flex;
   flex-direction: column;
@@ -265,7 +274,7 @@ li {
 .carousel_item--selected {
   display: block;
 
-  background: #191c29;
+  background: #213240;
   height: 250px;
   width: 180px;
   padding: 10px;
@@ -285,6 +294,7 @@ li {
   justify-content: space-around;
   align-items: center;
   margin: 4px;
+  margin-bottom: 22px;
 }
 
 .carousel_btn {
@@ -305,4 +315,51 @@ li {
   border-radius: 50%;
   margin: 0 5px;
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 3;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#sidebar {
+  width: 10px;
+  position: fixed;
+  text-align: center;
+  padding: 10px;
+  margin-left: 10px;
+  z-index: 1;
+}
+
+.social {
+  margin-left: -178px;
+  width: 200px;
+  height: 80px;
+  padding: 0px 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.73);
+  box-shadow: 0px 0px 6px 0px #3e3d3d;
+  cursor: pointer;
+  transition-timing-function: ease-out;
+  transition: margin-left 1s;
+}
+
+.social:hover {
+  margin-left: -30px;
+  width: 200px;
+  background-color: #034848;
+}
+
+.social img {
+    width: 42px;
+}
+
+.social p {
+    color: #eee;
 }
