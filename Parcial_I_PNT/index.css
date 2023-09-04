@@ -1,0 +1,75 @@
+* {
+    margin: 2px;
+    align-self: center;
+}
+
+.titles{
+    color: whitesmoke;
+}
+
+.content {
+    background: linear-gradient(150deg,
+            #1b1d1f,
+            #141823,
+            #330808,
+            #6c1c0c,
+            #ad2908);
+    background-size: 240% 240%;
+    animation: gradient-animation 22s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    40% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#titleText {
+    text-align: center;
+    width: 100%;
+    margin: 20px;
+}
+
+#interestForm {
+    margin: 2px;
+}
+
+.genderText {
+    margin-left: 0px;
+}
+
+#btnSubmit {
+    height: 4vh;
+    color: black;
+    background-color: white;
+    margin: 25px;
+}
+
+#btnSubmit:hover {
+    height: 4vh;
+    color: rgb(0, 0, 0);
+    background-color: rgb(154, 154, 154);
+}
+
+#fileContainer{
+    background-color: rgb(256, 256, 256, .8);
+    padding: 2px;
+    margin: 10px;
+
+}
+
+#inputText{
+    margin: 10px;
+}
+
+input{
+    width: 100%;
+}
