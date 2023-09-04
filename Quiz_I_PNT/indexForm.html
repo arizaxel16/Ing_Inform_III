@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/Quiz_I_PNT/indexForm.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Formulario Aplicantes</h1>
+            <div class="form_question">
+                <h3>Nombre</h3>
+                <input type="text" id="name">
+            </div>
+
+            <div class="form_question">
+                <h3>Apellidos</h3>
+                <input type="text" id="name">
+            </div>
+
+            <div class="form_question">
+                <h3>Fecha de Nacimiento</h3>
+                <input type="date" id="dateInput">
+            </div>
+
+            <div class="form_question">
+                <h3>Genero</h3>
+                <div style="display: flex; flex-direction: row; justify-content: space-around; width: 40%; align-content: left;">
+                    <input type="radio" id="M"><h5>M</h5><input type="radio" id="F"><h5>F</h5>
+                </div>
+            </div>
+
+            <button type="submit" onclick="onClickSubmitHandler()">Enviar Formulario</button>
+
+            <div id="approved"></div>
+        </div>
+        
+        <script src="/Quiz_I_PNT/indexForm.js" async defer></script>
+    </body>
+</html>
