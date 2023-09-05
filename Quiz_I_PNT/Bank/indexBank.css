@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.num_select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    width: 8vw;
+    height: 16vh;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+}
+
+.container_num {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
