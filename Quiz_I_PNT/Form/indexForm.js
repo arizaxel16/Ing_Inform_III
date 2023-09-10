@@ -5,6 +5,7 @@ document.getElementById("dateInput").addEventListener("change", function() {
     dateInput = new Date(input);
     console.log(input);
     console.log(dateInput);
+    document.getElementById("approved").innerHTML = ""
 });
 
 function calcAge(birthdate) {
@@ -17,9 +18,9 @@ function onClickSubmitHandler() {
     if (dateInput != undefined) {
         if (calcAge(dateInput)>= 18 && calcAge(dateInput)<= 55) {
             console.log("Aprobado")
-            document.getElementById("approved").innerHTML = "<span><h2 class='approved_text'>Aprobado !</h2></span>"
+            document.getElementById("approved").innerHTML = "<span><div class='container_approved'><h2>Aprobado !</h2><h5>Felicitaciones :)</h5></div></span>"
         } else {
-            console.log("Rechazado")
+            alert("Rechazado")
         }
     } else {
         alert("Ingrese una fecha")
