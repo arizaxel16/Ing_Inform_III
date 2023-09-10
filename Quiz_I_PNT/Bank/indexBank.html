@@ -12,12 +12,12 @@
        <div class="container">
         <h1>Bank of America</h1>
         <div class="container_num">
+            <input type="text" id="num0" class="num_select" maxlength="1" oninput="moveToNextInput(this, 'num1')">
             <input type="text" id="num1" class="num_select" maxlength="1" oninput="moveToNextInput(this, 'num2')">
             <input type="text" id="num2" class="num_select" maxlength="1" oninput="moveToNextInput(this, 'num3')">
-            <input type="text" id="num3" class="num_select" maxlength="1" oninput="moveToNextInput(this, 'num4')">
-            <input type="text" id="num4" class="num_select" maxlength="1" oninput="moveToNextInput(this, 'btn_submit')">
+            <input type="text" id="num3" class="num_select" maxlength="1" oninput="moveToNextInput(this, 'btn_submit')">
         </div>
-        <button type="submit" id="btn_submit">Ingresar</button>
+        <button type="submit" id="btn_submit" onclick="onClickHandler()">Ingresar</button>
         <div id="container_error"></div>
        </div>
         
