@@ -1,0 +1,94 @@
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    color: white;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+body {
+    background-color: rgb(17, 73, 122);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.container_money {
+    width: 30%;
+    height: 70%;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_history {
+    width: 30%;
+    min-width: 350px;
+    height: 70%;
+    background-color: rgb(5, 41, 71);
+}
+
+.container_transaction {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#txtField_transaction {
+    width: 98%;
+    height: 32px;
+}
+
+.container_btn {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+}
+
+button {
+    margin-top: 10px;
+    height: 32px;
+    width: 48%;
+    transition-duration: .3s;
+    border: none;
+    color: white;
+    border-radius: 15px;
+}
+
+#btn_deposit {
+    background-color: rgb(10, 110, 30);
+}
+
+#btn_deposit:hover {
+    background-color: rgb(7, 85, 22);
+}
+
+#btn_withdraw {
+    background-color: rgb(179, 24, 24);
+}
+
+#btn_withdraw:hover {
+    background-color: rgb(94, 14, 14);
+}

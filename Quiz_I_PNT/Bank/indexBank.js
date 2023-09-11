@@ -29,6 +29,7 @@ function moveToNextInput(currentInput, nextInputId) {
 function onClickHandler() {
   if (match()) {
     strikes = 3;
+    window.location.href = "/Quiz_I_PNT/Bank/logInBank.html";
   } else {
     strikes--;
     document.getElementById("container_error").style.backgroundColor = "white";
