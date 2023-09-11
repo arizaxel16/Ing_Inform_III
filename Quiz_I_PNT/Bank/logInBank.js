@@ -12,7 +12,7 @@ function onClickHandleTransaction(transactionType) {
     if (transactionType === 1) {
       updateText(transactionValue);
       registerTransaction(transactionValue);
-    } else if (transactionType === 0 && transactionValue <= balance) {
+    } else if (transactionValue <= balance) {
       transactionValue = transactionValue * -1;
       updateText(transactionValue);
       registerTransaction(transactionValue);
