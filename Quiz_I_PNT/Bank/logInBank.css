@@ -37,13 +37,6 @@ body {
     align-items: center;
 }
 
-.container_history {
-    width: 30%;
-    min-width: 350px;
-    height: 70%;
-    background-color: rgb(5, 41, 71);
-}
-
 .container_transaction {
     width: 100%;
     display: flex;
@@ -91,4 +84,38 @@ button {
 
 #btn_withdraw:hover {
     background-color: rgb(94, 14, 14);
+}
+
+#container_history {
+    width: 30%;
+    max-height: 740px;
+    min-width: 350px;
+    height: 70%;
+    background-color: rgb(5, 41, 71);
+    padding: 15px;
+    border-radius: 15px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container_receipt {
+    height: 52px;
+    width: 97%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin-bottom: 12px;
+}
+
+.positive {
+    color: rgb(10, 110, 30);
+}
+
+.negative {
+    color: rgb(179, 24, 24);
 }
