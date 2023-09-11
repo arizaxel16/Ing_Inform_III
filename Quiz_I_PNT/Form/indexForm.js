@@ -15,14 +15,20 @@ function calcAge(birthdate) {
 }
 
 function onClickSubmitHandler() {
-    if (dateInput != undefined) {
-        if (calcAge(dateInput)>= 18 && calcAge(dateInput)<= 55) {
-            console.log("Aprobado")
-            document.getElementById("approved").innerHTML = "<span><div class='container_approved'><h2>Aprobado !</h2><h5>Felicitaciones :)</h5></div></span>"
+    let name = document.getElementById("name").value;
+    let surname = document.getElementById("surname").value;
+
+    if (name != "" && surname != "") {
+        if (dateInput != undefined) {
+            if (calcAge(dateInput)>= 18 && calcAge(dateInput)<= 55) {
+                document.getElementById("approved").innerHTML = "<span><div class='container_approved'><h2>Approved !</h2><h5>Felicitaciones :)</h5></div></span>"
+            } else {
+                alert("Rejected");
+            }
         } else {
-            alert("Rechazado")
+            alert("Enter a date");
         }
     } else {
-        alert("Ingrese una fecha")
+        alert("All fields must be answered");
     }
 }
