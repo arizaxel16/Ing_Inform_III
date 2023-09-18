@@ -48,11 +48,10 @@ function onClickHandler() {
     // si retorna falso resta un 'strike'
       // genera HTML de error como aviso visual para usuario
     strikes--;
-    document.getElementById("container_error").style.backgroundColor = "white";
     document.getElementById("container_error").innerHTML =
-      "<h4>La contraseña es incorrecta</h4><h5 id='error_msg'></h5>";
+      "<h4>Wrong password try again</h4><h5 id='error_msg'></h5>";
     document.getElementById("error_msg").innerText =
-      "Intentos restantes: " + strikes;
+      "Attempts remaining: " + strikes;
     // revisa cantidad de 'strikes' restantes, en 'strikes' === 0 cierra pagina
     if (strikes === 0) {
       window.close();

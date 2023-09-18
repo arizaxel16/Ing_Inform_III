@@ -33,7 +33,7 @@ function onClickSubmitHandler() {
             // if: revisa edad dentro de edad aprobada
             if (calcAge(dateInput) >= 18 && calcAge(dateInput) <= 55) {
                 // adjunta HTML de 'aprobado'
-                document.getElementById("approved").innerHTML = "<span><div class='container_approved'><h2>Approved !</h2><h5>Felicitaciones :)</h5></div></span>"
+                document.getElementById("approved").innerHTML = "<span><div class='container_approved'><h2>Approved !</h2></div></span>"
             } else {
                 // alerta de rechazo
                 alert("Rejected");
