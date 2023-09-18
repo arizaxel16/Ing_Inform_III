@@ -1,5 +1,7 @@
 // class vars
 var dateInput;
+const minAge = 18;
+const maxAge = 55
 
 // listener actualiza HTML segun cambio de fecha
     // print en consola de valores de fecha
@@ -31,7 +33,7 @@ function onClickSubmitHandler() {
         // if: revisa campo fecha no este vacio
         if (dateInput != undefined) {
             // if: revisa edad dentro de edad aprobada
-            if (calcAge(dateInput) >= 18 && calcAge(dateInput) <= 55) {
+            if (calcAge(dateInput) >= minAge && calcAge(dateInput) <= maxAge) {
                 // adjunta HTML de 'aprobado'
                 document.getElementById("approved").innerHTML = "<span><div class='container_approved'><h2>Approved !</h2></div></span>"
         // alerta de rechazo
