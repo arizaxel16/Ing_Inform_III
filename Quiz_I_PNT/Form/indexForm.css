@@ -22,8 +22,7 @@ h1 {
 .form_question {
     color: white;
     height: 8vh;
-    width: 255px;
-    max-width: 500px;
+    width: 380px;
     margin: 10px;
     padding: 10px;
     background-color: rgb(109, 145, 176);
@@ -35,7 +34,7 @@ h1 {
 }
 
 input {
-    max-width: 250px;
+    width: 97%;
 }
 
 .container_approved {
