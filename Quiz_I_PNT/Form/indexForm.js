@@ -34,16 +34,10 @@ function onClickSubmitHandler() {
             if (calcAge(dateInput) >= 18 && calcAge(dateInput) <= 55) {
                 // adjunta HTML de 'aprobado'
                 document.getElementById("approved").innerHTML = "<span><div class='container_approved'><h2>Approved !</h2></div></span>"
-            } else {
-                // alerta de rechazo
-                alert("Rejected");
-            }
-        } else {
-            // alerta falta ingresar fecha
-            alert("Enter a date");
-        }
-    } else {
+        // alerta de rechazo
+            } else { alert("Rejected") } 
+        // alerta falta ingresar fecha
+        } else { alert("Enter a date") }
         // alerta campos vacios
-        alert("All fields must be answered");
-    }
+    } else { alert("All fields must be answered") }
 }
